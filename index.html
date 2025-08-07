@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Buy fresh organic vegetables and fruits directly from Farm Fresh. Enjoy seasonal offers and healthy produce delivered to your home.">
+  <meta name="keywords" content="farm fresh, organic vegetables, organic fruits, healthy food, fresh produce">
+  <meta name="author" content="Farm Fresh">
+  <title>Farm Fresh</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf2;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #7dbb3e;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background-color: #a5d66a;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fdf8ee;
+    }
+
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .offer {
+      background-color: #f6f0d6;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #contact {
+      background: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #contact input, #contact textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #contact button {
+      padding: 10px;
+      background-color: #7dbb3e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #contact button:hover {
+      background-color: #4c87d4;
+    }
+
+    footer {
+      background-color: #aedf7d;
+      text-align: center;
+      padding: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Farm Fresh</h1>
+  </header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="vegetables.html">Vegetables</a>
+  <a href="fruits.html">Fruits</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+  <div class="hero">
+    <h1>Fresh From the Farm</h1>
+    <p>Organic vegetables and juicy fruits delivered straight from our farms to your home.</p>
+  </div>
+
+  <div id="vegetables" class="items">
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\tomato.jpg" alt="Tomato">
+      <h3>Tomato</h3>
+      <p>Bright red, juicy tomatoes packed with flavor.</p>
+    </div>
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\carrot.jpg" alt="Carrot">
+      <h3>Carrot</h3>
+      <p>Crunchy and sweet organic carrots for healthy living.</p>
+    </div>
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\brinjal.jpeg" alt="Brinjal">
+      <h3>Brinjal</h3>
+      <p>Fresh purple brinjals, ideal for curries and fries.</p>
+    </div>
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\potato.jpeg" alt="Potato">
+      <h3>Potato</h3>
+      <p>Farm-grown potatoes rich in taste and nutrients.</p>
+    </div>
+  </div>
+
+  <div id="fruits" class="items">
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\apple.jpg" alt="Apple">
+      <h3>Apple</h3>
+      <p>Fresh red apples, full of natural sweetness and nutrients.</p>
+    </div>
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\banana.jpeg" alt="Banana">
+      <h3>Banana</h3>
+      <p>Rich in potassium, naturally sweet and ready to eat.</p>
+    </div>
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\orange.jpeg" alt="Orange">
+      <h3>Orange</h3>
+      <p>Juicy and refreshing, packed with vitamin C.</p>
+    </div>
+    <div class="card">
+      <img src="E:\kodenest\Front End\HTML\mango.jpeg" alt="Mango">
+      <h3>Mango</h3>
+      <p>Sweet and tropical delight, the king of fruits.</p>
+    </div>
+  </div>
+
+  <div class="offer">
+    🌱 Seasonal Offer: Get 15% off on all organic fruit boxes this week!
+  </div>
+
+  <div id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you for contacting us!');">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Farm Fresh. All rights reserved.
+  </footer>
+
+</body>
+</html>
